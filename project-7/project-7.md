@@ -39,5 +39,8 @@
   - Set SELinux Enforcing to 0 (sudo setenforce 0)
   - Update functions.php file with database configuration details ![](./images/website-update.PNG)
   - Apply tooling-db.sql script (mysql -h db_ip -u webaccess -p tooling < tooling-db.sql)
-  - Insert new user into the database (You can also do this by editing the tooling-db.sql script appropriately.) (INSERT INTO ‘users’ (’id’, ‘username’, ‘password’, ‘email’, ‘user_type’, ‘status’) VALUES -> (1, ‘myuser’, ‘5f4dcc3b5aa765d61d8327deb882cf99’, ‘user@mail.com’, ‘admin’, ‘1’);)
+  - Insert new user into the database (You can also do this by editing the tooling-db.sql script appropriately.) 
+  ```
+  INSERT INTO ‘users’ (’id’, ‘username’, ‘password’, ‘email’, ‘user_type’, ‘status’) VALUES -> (1, ‘myuser’, ‘5f4dcc3b5aa765d61d8327deb882cf99’, ‘user@mail.com’,         ‘admin’, ‘1’);
+  ```
   - Login to website using one of the webservers ip address ![](./images/website.PNG)
